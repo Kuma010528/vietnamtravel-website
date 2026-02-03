@@ -341,6 +341,38 @@ body {background: #f5f7fa;}
 
 }
 
+@media (max-width: 768px){
+
+/* Header xuống dạng cột */
+.header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Chữ Viet Nam Travel nằm trái */
+.logo{
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+}
+
+/* Menu xuống dưới logo và dàn đều */
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Khoảng cách menu */
+.menu a{
+    margin: 0;
+    font-size: 15px;
+}
+
+}
+
 
 </style>
 </head>
