@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Đăng ký Tour</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body{
@@ -91,37 +92,59 @@ body{
     color:white;
 }
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
 body{
     display:block;
     height:auto;
 }
 
-/* Form full màn hình */
+/* Form gần full màn hình */
 .form-tour{
-    width:100%;
-    min-height:100vh;
-    margin:0;
-    border-radius:0;
-    box-shadow:none;
-    padding:25px 18px;
+    width:95%;          /* gần full màn hình */
+    margin:20px auto;   /* căn giữa + cách trên dưới */
+    border-radius:12px;
+    box-shadow:none;    /* bỏ shadow cho gọn */
+    padding:25px 20px;
 }
 
-/* Input to hơn cho dễ bấm */
+/* Input to hơn cho mobile */
 .form-group input,
 .form-group select{
     padding:14px;
     font-size:16px;
 }
 
-/* Nút xác nhận full đẹp hơn */
+/* Nút xác nhận */
 .form-tour button{
-    padding:15px;
+    padding:16px;
     font-size:17px;
 }
+}
+
+/* ===== Form mặc định (máy tính) ===== */
+.form-container{
+    width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+
+/* ===== Responsive cho điện thoại ===== */
+@media (max-width:768px){
+
+    .form-container{
+        width: 95%;          /* gần full màn hình */
+        margin: 20px auto;   /* giảm khoảng cách trên dưới */
+        padding: 20px;
+        border-radius: 10px;
+    }
 
 }
+
 
 
 </style>
