@@ -93,17 +93,36 @@ body{
 
 @media (max-width: 768px){
 
-.form-tour{
-    width: 90%;
-    padding: 25px;
+body{
+    display:block;
+    height:auto;
 }
 
-/* Nút quay lại nhỏ lại */
-.back-btn{
-    padding: 10px 15px;
-    font-size: 14px;
+/* Form full màn hình */
+.form-tour{
+    width:100%;
+    min-height:100vh;
+    margin:0;
+    border-radius:0;
+    box-shadow:none;
+    padding:25px 18px;
 }
+
+/* Input to hơn cho dễ bấm */
+.form-group input,
+.form-group select{
+    padding:14px;
+    font-size:16px;
 }
+
+/* Nút xác nhận full đẹp hơn */
+.form-tour button{
+    padding:15px;
+    font-size:17px;
+}
+
+}
+
 
 </style>
 </head>
