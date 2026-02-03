@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Đăng ký Tour</title>
+
+<style>
+body{
+    font-family: Arial;
+    background:#f5f7fa;
+}
+
+.form-tour{
+    width:400px;
+    margin:60px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.form-tour h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-tour input, select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+.form-tour button{
+    width:100%;
+    padding:12px;
+    background:#ff6600;
+    border:none;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-tour">
+    <h2>Đăng ký Tour</h2>
+
+    <input type="text" placeholder="Họ và tên">
+    <input type="text" placeholder="Số điện thoại">
+    <input type="email" placeholder="Email">
+
+    <select>
+        <option>Chọn tour</option>
+        <option>Hà Nội - Đà Nẵng</option>
+        <option>TP.HCM - Phú Quốc</option>
+        <option>Hà Nội - Sa Pa</option>
+        <option>Huế - Hội An</option>
+    </select>
+
+    <input type="date">
+
+    <button>Xác nhận đăng ký</button>
+</div>
+
+</body>
+</html>
