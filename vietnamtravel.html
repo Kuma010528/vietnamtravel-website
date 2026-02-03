@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <title>Viet Nam Travel</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 * {margin: 0;
    padding: 0;
@@ -238,6 +240,48 @@ body {background: #f5f7fa;}
     float: right;
     cursor: pointer;
     font-size: 20px;
+}
+/* Responsive cho điện thoại */
+@media (max-width: 768px){
+
+/* Header */
+.header{
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Banner */
+.banner{
+    height: 250px;
+}
+
+/* Search box */
+.search-box{
+    width: 90%;
+}
+
+.form-row{
+    flex-direction: column;
+}
+
+/* Tour chuyển thành 1 cột */
+.tour-container{
+    grid-template-columns: 1fr;
+    padding: 15px;
+}
+
+/* Footer */
+.footer-container{
+    grid-template-columns: 1fr;
+    text-align: center;
+}
 }
 
 </style>
